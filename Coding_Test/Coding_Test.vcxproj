@@ -143,6 +143,7 @@
     <ClCompile Include="practice_2.cpp" />
     <ClCompile Include="practice_3.cpp" />
     <ClCompile Include="practice_4.cpp" />
+    <ClCompile Include="practice_5.cpp" />
     <ClCompile Include="Test_0.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
