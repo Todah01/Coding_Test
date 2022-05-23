@@ -147,6 +147,7 @@
     <ClCompile Include="practice_6.cpp" />
     <ClCompile Include="practice_7.cpp" />
     <ClCompile Include="practice_8.cpp" />
+    <ClCompile Include="practice_9.cpp" />
     <ClCompile Include="Test_0.cpp" />
     <ClCompile Include="Test_2.cpp" />
   </ItemGroup>
