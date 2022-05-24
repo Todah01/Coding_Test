@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="practice_1.cpp" />
+    <ClCompile Include="practice_10.cpp" />
     <ClCompile Include="practice_2.cpp" />
     <ClCompile Include="practice_3.cpp" />
     <ClCompile Include="practice_4.cpp" />
