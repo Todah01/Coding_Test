@@ -71,17 +71,32 @@ int main()
 }
 #endif
 
-#if 1
+#if 0
 #include <string>
 #include <vector>
-#include <map>
+#include <queue>
 #include <iostream>
 
 using namespace std;
 
 int solution(vector<int> scoville, int K) {
     int answer = 0;
+    priority_queue<int, vector<int>, greater<int>> pq(scoville.begin(), scoville.end());
 
+    while (pq.top() < K)
+    {
+        if (pq.size() == 1) return -1;
+
+        int first_val = pq.top();
+        pq.pop();
+        int second_val = pq.top();
+        pq.pop();
+
+        int new_scoville = first_val + (second_val * 2);
+        pq.push(new_scoville);
+
+        answer++;
+    }
     return answer;
 }
 
@@ -90,6 +105,6 @@ int main()
     vector<int> scoville = { 1,2,3,9,10,12 };
     int K = 7;
 
-    //cout << solution(scoville, K);
+    cout << solution(scoville, K);
 }
 #endif
