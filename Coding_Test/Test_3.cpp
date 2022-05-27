@@ -1,5 +1,5 @@
 //1¹ø
-#if 1
+#if 0
 #include <string>
 #include <vector>
 
