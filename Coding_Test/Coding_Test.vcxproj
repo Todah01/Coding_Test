@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="lottos.cpp" />
     <ClCompile Include="practice_1.cpp" />
     <ClCompile Include="practice_10.cpp" />
     <ClCompile Include="practice_11.cpp" />
