@@ -31,7 +31,6 @@ vector<int> solution(int N, vector<int> stages) {
         {
             temp.push_back({ i, 0 });
         }
-
     }
 
     sort(temp.begin(), temp.end(), cmp);
@@ -40,7 +39,6 @@ vector<int> solution(int N, vector<int> stages) {
     {
         answer.push_back(iter.first);
     }
-
     return answer;
 }
 #endif
