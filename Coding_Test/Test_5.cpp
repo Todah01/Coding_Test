@@ -125,7 +125,7 @@ string solution(vector<int> numbers, string hand) {
 }
 #endif
 
-//3번
+//3번 - 1
 #if 0
 #include <string>
 #include <vector>
@@ -157,6 +157,49 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
     }
 
     if (!q.empty()) answer.push_back(q.size());
+
+    return answer;
+}
+#endif
+
+//3번 - 2
+#if 0
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+string solution(string number, int k) {
+    string answer = "";
+    ///vector<int> temp;
+
+    //for(int i=0; i<number.size(); i++) temp.push_back((int)number[i] - '0');
+
+
+    // 어떤 숫자 중에서 k개의 숫자를 제거하는 모든 경우의 수를 나열
+    long long N = number.size();
+    //int N = temp.size();
+    long long max = 0;
+    vector<int> perm(N);
+
+    for (int i = k; i < N; i++) perm[i] = 1;
+
+    do
+    {
+        string comb = "";
+        for (int i = 0; i < perm.size(); i++)
+        {
+            // 각 경우의 수에 대해 만들 수 있는 모든 조합의 수를 나열
+            if (perm[i] == 1) comb += to_string(number[i] - '0');
+        }
+        if (max < stoll(comb)) max = stoll(comb);
+        // cout << comb << endl;
+        // cout << "ㅡㅡ" << endl;
+    } while (next_permutation(perm.begin(), perm.end()));
+
+    answer = to_string(max);
 
     return answer;
 }
