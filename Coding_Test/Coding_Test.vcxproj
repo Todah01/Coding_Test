@@ -142,6 +142,7 @@
     <ClCompile Include="crain_select.cpp" />
     <ClCompile Include="lottos.cpp" />
     <ClCompile Include="new_id_suggest.cpp" />
+    <ClCompile Include="ponketmon.cpp" />
     <ClCompile Include="practice_1.cpp" />
     <ClCompile Include="practice_10.cpp" />
     <ClCompile Include="practice_11.cpp" />
