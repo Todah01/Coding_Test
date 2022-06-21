@@ -160,6 +160,7 @@
     <ClCompile Include="practice_23.cpp" />
     <ClCompile Include="practice_24.cpp" />
     <ClCompile Include="practice_25.cpp" />
+    <ClCompile Include="practice_26.cpp" />
     <ClCompile Include="practice_3.cpp" />
     <ClCompile Include="practice_4.cpp" />
     <ClCompile Include="practice_5.cpp" />
@@ -167,6 +168,7 @@
     <ClCompile Include="practice_7.cpp" />
     <ClCompile Include="practice_8.cpp" />
     <ClCompile Include="practice_9.cpp" />
+    <ClCompile Include="scoville.cpp" />
     <ClCompile Include="Test_0.cpp" />
     <ClCompile Include="Test_2.cpp" />
     <ClCompile Include="Test_3.cpp" />
