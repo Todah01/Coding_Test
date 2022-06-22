@@ -170,6 +170,7 @@
     <ClCompile Include="practice_9.cpp" />
     <ClCompile Include="scoville.cpp" />
     <ClCompile Include="Test_0.cpp" />
+    <ClCompile Include="Test_7.cpp" />
     <ClCompile Include="Test_2.cpp" />
     <ClCompile Include="Test_3.cpp" />
     <ClCompile Include="Test_4.cpp" />
