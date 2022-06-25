@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="collaz.cpp" />
     <ClCompile Include="crain_select.cpp" />
     <ClCompile Include="lottos.cpp" />
     <ClCompile Include="new_id_suggest.cpp" />
