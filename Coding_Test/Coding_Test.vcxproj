@@ -163,6 +163,8 @@
     <ClCompile Include="practice_25.cpp" />
     <ClCompile Include="practice_26.cpp" />
     <ClCompile Include="practice_27.cpp" />
+    <ClCompile Include="practice_28.cpp" />
+    <ClCompile Include="practice_29.cpp" />
     <ClCompile Include="practice_3.cpp" />
     <ClCompile Include="practice_4.cpp" />
     <ClCompile Include="practice_5.cpp" />
