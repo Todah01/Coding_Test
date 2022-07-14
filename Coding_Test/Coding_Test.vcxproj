@@ -176,7 +176,9 @@
     <ClCompile Include="scoville.cpp" />
     <ClCompile Include="secretmap.cpp" />
     <ClCompile Include="stack_sequence.cpp" />
+    <ClCompile Include="stock_price.cpp" />
     <ClCompile Include="Test_0.cpp" />
+    <ClCompile Include="Test_10.cpp" />
     <ClCompile Include="Test_7.cpp" />
     <ClCompile Include="Test_2.cpp" />
     <ClCompile Include="Test_3.cpp" />
