@@ -173,6 +173,7 @@
     <ClCompile Include="practice_7.cpp" />
     <ClCompile Include="practice_8.cpp" />
     <ClCompile Include="practice_9.cpp" />
+    <ClCompile Include="printer.cpp" />
     <ClCompile Include="scoville.cpp" />
     <ClCompile Include="secretmap.cpp" />
     <ClCompile Include="stack_sequence.cpp" />
