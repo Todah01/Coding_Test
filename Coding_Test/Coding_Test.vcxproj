@@ -168,6 +168,7 @@
     <ClCompile Include="practice_29.cpp" />
     <ClCompile Include="practice_3.cpp" />
     <ClCompile Include="practice_30.cpp" />
+    <ClCompile Include="practice_37.cpp" />
     <ClCompile Include="practice_4.cpp" />
     <ClCompile Include="practice_5.cpp" />
     <ClCompile Include="practice_6.cpp" />
@@ -179,6 +180,7 @@
     <ClCompile Include="secretmap.cpp" />
     <ClCompile Include="stack_sequence.cpp" />
     <ClCompile Include="stock_price.cpp" />
+    <ClCompile Include="str_zip.cpp" />
     <ClCompile Include="Test_0.cpp" />
     <ClCompile Include="Test_10.cpp" />
     <ClCompile Include="Test_7.cpp" />
