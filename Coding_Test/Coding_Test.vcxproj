@@ -188,6 +188,8 @@
     <ClCompile Include="Test_14.cpp" />
     <ClCompile Include="Test_15.cpp" />
     <ClCompile Include="Test_16.cpp" />
+    <ClCompile Include="Test_17.cpp" />
+    <ClCompile Include="Test_18.cpp" />
     <ClCompile Include="Test_7.cpp" />
     <ClCompile Include="Test_2.cpp" />
     <ClCompile Include="Test_3.cpp" />
