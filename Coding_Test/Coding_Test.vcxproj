@@ -142,6 +142,7 @@
     <ClCompile Include="collaz.cpp" />
     <ClCompile Include="crain_select.cpp" />
     <ClCompile Include="fade.cpp" />
+    <ClCompile Include="k_number.cpp" />
     <ClCompile Include="lottos.cpp" />
     <ClCompile Include="new_id_suggest.cpp" />
     <ClCompile Include="ponketmon.cpp" />
@@ -190,6 +191,7 @@
     <ClCompile Include="Test_16.cpp" />
     <ClCompile Include="Test_17.cpp" />
     <ClCompile Include="Test_18.cpp" />
+    <ClCompile Include="Test_19.cpp" />
     <ClCompile Include="Test_7.cpp" />
     <ClCompile Include="Test_2.cpp" />
     <ClCompile Include="Test_3.cpp" />
