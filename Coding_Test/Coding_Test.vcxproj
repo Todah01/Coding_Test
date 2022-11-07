@@ -169,6 +169,7 @@
     <ClCompile Include="practice_29.cpp" />
     <ClCompile Include="practice_3.cpp" />
     <ClCompile Include="practice_30.cpp" />
+    <ClCompile Include="smart_pointer.cpp" />
     <ClCompile Include="webzen.cpp" />
     <ClCompile Include="practice_4.cpp" />
     <ClCompile Include="practice_5.cpp" />

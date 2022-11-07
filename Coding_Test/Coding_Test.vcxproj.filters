@@ -198,5 +198,8 @@
     <ClCompile Include="Test_19.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="smart_pointer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
