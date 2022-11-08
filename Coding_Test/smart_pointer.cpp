@@ -1,4 +1,4 @@
-#if 1
+#if 0
 #include <iostream>
 #include <memory>
 
@@ -46,6 +46,19 @@ int main()
 	auto ptr05 = ptr03;                // 대입을 통한 초기화
 
 	cout << ptr05.use_count() << endl; // 3  
+	
+	// EX
+	shared_ptr<Person> wobo = make_shared<Person>("와보", 28);
+
+	cout << "현재 소유자 수 : " << wobo.use_count() << endl; // 1
+
+	auto han = wobo;
+
+	cout << "현재 소유자 수 : " << wobo.use_count() << endl; // 2
+
+	han.reset(); // shared_ptr인 han을 해제함.
+
+	cout << "현재 소유자 수 : " << wobo.use_count() << endl; // 1
 	#pragma endregion
 
 	return 0;
