@@ -204,5 +204,8 @@
     <ClCompile Include="hash_table.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="vector.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
