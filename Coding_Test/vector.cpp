@@ -3,6 +3,23 @@
 
 double vector_dotp(double x[], double y[]);
 
+struct vector2 {
+	double x, y;
+	//생성자
+	vector2(double _x, double _y) {
+		x = _x, y = _y;
+	}
+	//외적
+	double cross(const vector2& other) const {
+		return x * other.y - y * other * x;
+	}
+}
+
+double ccw(vector2 a, vector2 b) {
+	// 두 선분의 교차 여부를 판별과 볼록 껍질 찾기(convex hull)
+	return a.cross(b);
+}
+
 int main(void) {
 
 	double x[3] = {
@@ -53,6 +70,7 @@ int main(void) {
 	n_y = Vector1.z * Vector2.x - Vector1.x * Vector2.z;
 	n_z = Vector1.x * Vector2.y - Vector1.y * Vector2.x;
 
+	
 
 	return 0;
 
