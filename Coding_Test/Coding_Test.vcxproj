@@ -204,6 +204,10 @@
     <ClCompile Include="Test_8.cpp" />
     <ClCompile Include="Test_9.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RootHeader.h" />
+    <ClInclude Include="Vector.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

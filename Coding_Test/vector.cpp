@@ -1,5 +1,109 @@
 #if 0
 #include <stdio.h>
+#include <math.h>
+#include "Vector.h"
+
+vec3::vec3()
+{
+	x = 0;
+	y = 0;
+	z = 0;
+}
+vec3::vec3(float x, float y, float z)
+{
+	this->x = x;
+	this->y = y;
+	this->z = z;
+}
+vec3::vec3(float vec[])
+{
+	this->x = vec[0];
+	this->y = vec[1];
+	this->z = vec[2];
+}
+
+vec3 vec3::operator+(const vec3& operand)
+{
+	vec3 result;
+	result.x = x + operand.x;
+	result.y = y + operand.y;
+	result.z = z + operand.z;
+
+	return result;
+}
+vec3 vec3::operator-(const vec3& operand)
+{
+	vec3 result;
+	result.x = x - operand.x;
+	result.y = y - operand.y;
+	result.z = z - operand.z;
+
+	return result;
+}
+vec3 vec3::operator*(const float& operand)
+{
+	vec3 result;
+	result.x = x * operand;
+	result.y = y * operand;
+	result.z = z * operand;
+
+	return result;
+}
+vec3 vec3::operator/(const float& operand)
+{
+	vec3 result;
+	result.x = x / operand;
+	result.y = y / operand;
+	result.z = z / operand;
+
+	return result;
+}
+
+float vec3::GetLength()
+{
+	return sqrt((x * x) + (y * y) + (z * z));
+}
+
+
+
+vec3 vec3::Normalize(vec3 vec)
+{
+	float length = vec.GetLength();
+	if (length == 0)
+	{
+		return vec;
+	}
+	return (vec / length);
+}
+float vec3::Dot(vec3 a, vec3 b)
+{
+	float result = (a.x * b.x) + (a.y * b.y) + (a.z * b.z);
+	return result;
+}
+vec3 vec3::Cross(vec3 a, vec3 b)
+{
+	vec3 result = vec3((a.y * b.z) - (a.z * b.y), (a.z * b.x) - (a.x * b.z), (a.x * b.y) - (a.y * b.x));
+	return result;
+}
+vec3 vec3::ProjectionAB(vec3 a, vec3 b)
+{
+	if (b.GetLength() == 0)
+	{
+		return vec3(0, 0, 0);
+	}
+	vec3 result = b * (Dot(a, b) / (b.GetLength() * b.GetLength()));
+	return result;
+}
+vec3 vec3::VerticalAB(vec3 a, vec3 b)
+{
+	vec3 result = a - ProjectionAB(a, b);
+	return result;
+}
+float vec3::GetAngleAB(vec3 a, vec3 b)
+{
+	float result = radToDeg(acosf(Dot(a, b) / (a.GetLength() * b.GetLength())));
+	return result;
+}
 
 double vector_dotp(double x[], double y[]);
 
@@ -11,12 +115,12 @@ struct vector2 {
 	}
 	//외적
 	double cross(const vector2& other) const {
-		return x * other.y - y * other * x;
+		return x * other.y - y * other.x;
 	}
-}
+};
 
+// 두 선분의 교차 여부를 판별과 볼록 껍질 찾기(convex hull)
 double ccw(vector2 a, vector2 b) {
-	// 두 선분의 교차 여부를 판별과 볼록 껍질 찾기(convex hull)
 	return a.cross(b);
 }
 
