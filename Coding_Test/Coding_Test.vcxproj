@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="collaz.cpp" />
     <ClCompile Include="crain_select.cpp" />
+    <ClCompile Include="data_structure.c" />
     <ClCompile Include="fade.cpp" />
     <ClCompile Include="hash_table.cpp" />
     <ClCompile Include="k_number.cpp" />

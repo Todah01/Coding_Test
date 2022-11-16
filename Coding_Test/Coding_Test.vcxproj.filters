@@ -207,6 +207,9 @@
     <ClCompile Include="vector.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="data_structure.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
