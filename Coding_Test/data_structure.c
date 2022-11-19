@@ -62,7 +62,7 @@ int main()
 }
 #endif
 
-#if 1
+#if 0
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
