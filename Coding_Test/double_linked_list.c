@@ -15,6 +15,8 @@ NODE* g_phead;
 NODE* g_ptail;
 int g_nsize;
 
+void InsertBefore(NODE* psznode, const char* pszData);
+
 void InitList(void)
 {
 	g_phead = (NODE*)malloc(sizeof(NODE));
@@ -81,18 +83,7 @@ int InsertAtHead(const char* pszData)
 
 int InsertAtTail(const char* pszData)
 {
-	NODE* pNewNode = malloc(sizeof(NODE));
-	memset(pNewNode, 0, sizeof(NODE));
-
-	strcpy_s(pNewNode->szData, sizeof(pNewNode->szData), pszData);
-
-	pNewNode->next = g_ptail;
-	pNewNode->prev = g_ptail->prev;
-
-	g_ptail->prev = pNewNode;
-	pNewNode->prev->next = pNewNode;
-
-	g_nsize++;
+	InsertBefore(g_ptail, pszData);
 
 	return g_nsize;
 }
@@ -120,6 +111,8 @@ int DeleteNode(const char* pszData)
 
 	printf("DeleteNode() : [%p]\n", pNode);
 	free(pNode);
+
+	g_nsize--;
 
 	return 0;
 }
@@ -169,11 +162,6 @@ NODE* GetAtIdx(int idx)
 
 int InsertAtIdx(int idx, char* pszData)
 {
-	NODE* pNewNode = malloc(sizeof(NODE));
-	memset(pNewNode, 0, sizeof(NODE));
-
-	strcpy_s(pNewNode->szData, sizeof(pNewNode->szData), pszData);
-
 	NODE* pIdxNode = GetAtIdx(idx);
 
 	if (pIdxNode == NULL)
@@ -182,15 +170,25 @@ int InsertAtIdx(int idx, char* pszData)
 		return 0;
 	}
 
-	pNewNode->next = pIdxNode;
-	pNewNode->prev = pIdxNode->prev;
+	InsertBefore(pIdxNode, pszData);
 
-	pIdxNode->prev = pNewNode;
+	return idx;
+}
+
+void InsertBefore(NODE* psznode, const char* pszData)
+{
+	NODE* pNewNode = malloc(sizeof(NODE));
+	memset(pNewNode, 0, sizeof(NODE));
+
+	strcpy_s(pNewNode->szData, sizeof(pNewNode->szData), pszData);
+
+	pNewNode->next = psznode;
+	pNewNode->prev = psznode->prev;
+
+	psznode->prev = pNewNode;
 	pNewNode->prev->next = pNewNode;
 
 	g_nsize++;
-
-	return g_nsize;
 }
 
 int main()
@@ -203,6 +201,10 @@ int main()
 
 	InsertAtIdx(1, "Rabbit_Foot");
 	InsertAtIdx(3, "Rabbit_Foot");
+
+	DeleteNode("Rabbit_Foot");
+
+	printf("GetAtIdx() : [%p], %s\n", GetAtIdx(2), GetAtIdx(2)->szData);
 
 	PrintList();
 
