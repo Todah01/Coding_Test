@@ -207,6 +207,7 @@
     <ClCompile Include="Test_9.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="double_linked_list.h" />
     <ClInclude Include="RootHeader.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>

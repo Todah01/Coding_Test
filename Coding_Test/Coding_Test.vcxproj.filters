@@ -221,5 +221,8 @@
     <ClInclude Include="RootHeader.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="double_linked_list.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
