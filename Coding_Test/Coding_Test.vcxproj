@@ -147,6 +147,7 @@
     <ClCompile Include="hash_table.cpp" />
     <ClCompile Include="k_number.cpp" />
     <ClCompile Include="lottos.cpp" />
+    <ClCompile Include="mylist.c" />
     <ClCompile Include="new_id_suggest.cpp" />
     <ClCompile Include="ponketmon.cpp" />
     <ClCompile Include="practice_1.cpp" />
@@ -208,6 +209,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="double_linked_list.h" />
+    <ClInclude Include="mylist.h" />
     <ClInclude Include="RootHeader.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
