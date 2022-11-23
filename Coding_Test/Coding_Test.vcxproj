@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bintree.c" />
     <ClCompile Include="collaz.cpp" />
     <ClCompile Include="crain_select.cpp" />
     <ClCompile Include="data_structure.c" />

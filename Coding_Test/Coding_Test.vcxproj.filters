@@ -216,6 +216,9 @@
     <ClCompile Include="mylist.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="bintree.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">

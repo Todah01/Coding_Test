@@ -1,3 +1,4 @@
+#if 0
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
@@ -174,3 +175,4 @@ int IsEmpty(LIST_INFO* pListData)
 {
 	return GetSize(pListData);
 }
+#endif
