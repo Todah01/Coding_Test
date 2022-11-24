@@ -26,6 +26,7 @@ void ReleaseTree(NODE* pParent)
 	printf("free() : %p, %s\n", pParent, pParent->szData);
 	free(pParent);
 	g_proot = NULL;
+	g_nsize = 0;
 }
 
 void PrintTree(NODE* pParent)
@@ -94,10 +95,36 @@ int InsertNode(const char* pszData)
 	return 1;
 }
 
-NODE* FindNode(const char* pszData)
+NODE* FindNode(NODE* pParent, const char* pszData)
 {
+	if (pParent == NULL)
+	{
+		return NULL;
+	}
 
-	return 0;
+	//printf("%s is current node.\n", pParent->szData);
+	//printf("Comparing %s with %s...", pParent->szData, pszData);
+	//printf("Value is %d.\n", strcmp(pParent->szData, pszData));
+
+	if (strcmp(pParent->szData, pszData) == 0)
+	{
+		printf("Find %s\n", pszData);
+		return pParent;
+	}	
+	else if (strcmp(pParent->szData, pszData) > 0)
+	{
+		puts("Move to left\n");
+		return FindNode(pParent->left, pszData);
+	}
+	else if (strcmp(pParent->szData, pszData) < 0)
+	{
+		puts("Move to right\n");
+		return FindNode(pParent->right, pszData);
+	}
+
+	printf("Can't find %s\n", pszData);
+
+	return NULL;
 }
 
 int DeleteNode(const char* pszData)
@@ -124,11 +151,15 @@ int IsEmpty()
 
 int main(void)
 {
-	InsertNode("5번 항목");
-	InsertNode("4번 항목");
-	InsertNode("7번 항목");
-	InsertNode("6번 항목");
-	InsertNode("8번 항목");
+	InsertNode("5번");
+	InsertNode("4번");
+	InsertNode("7번");
+	InsertNode("6번");
+	InsertNode("8번");
+
+	printf("FindNode() : [%p], %s\n",
+		FindNode(g_proot, "7번"),
+		FindNode(g_proot, "7번")->szData);
 
 	PrintTree(g_proot);
 	ReleaseTree(g_proot);
