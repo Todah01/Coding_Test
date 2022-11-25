@@ -108,17 +108,17 @@ NODE* FindNode(NODE* pParent, const char* pszData)
 
 	if (strcmp(pParent->szData, pszData) == 0)
 	{
-		printf("Find %s\n", pszData);
+		// printf("Find %s\n", pszData);
 		return pParent;
 	}	
 	else if (strcmp(pParent->szData, pszData) > 0)
 	{
-		puts("Move to left\n");
+		// puts("Move to left\n");
 		return FindNode(pParent->left, pszData);
 	}
 	else if (strcmp(pParent->szData, pszData) < 0)
 	{
-		puts("Move to right\n");
+		// puts("Move to right\n");
 		return FindNode(pParent->right, pszData);
 	}
 
@@ -127,10 +127,20 @@ NODE* FindNode(NODE* pParent, const char* pszData)
 	return NULL;
 }
 
-int DeleteNode(const char* pszData)
+NODE* GetNodeHasMinValue(NODE* pParent)
 {
+	NODE* pTmp = pParent;
+	while (pTmp->left != NULL)
+		pTmp = pTmp->left;
 
-	return 0;
+	return pTmp;
+}
+
+int DeleteNode(NODE* pParent, const char* pszData)
+{
+	
+
+	return 1;
 }
 
 int GetSize(void)
