@@ -138,7 +138,57 @@ NODE* GetNodeHasMinValue(NODE* pParent)
 
 int DeleteNode(NODE* pParent, const char* pszData)
 {
-	
+	NODE* ParentNode = (NODE*)malloc(sizeof(NODE));
+	memset(ParentNode, 0, sizeof(NODE));
+	NODE* pNode = pParent;
+
+	while (pNode != NULL)
+	{
+		ParentNode = pNode;
+
+		if (strcmp(pNode->szData, pszData) > 0)
+			pNode = pNode->left;
+		else if (strcmp(pNode->szData, pszData) < 0)
+			pNode = pNode->right;
+		else
+			break;
+	}
+
+	// 삭제할 노드를 찾지 못한 경우.
+	if (pNode == NULL)
+	{
+		printf("There is no node include pszdata.\n");
+		return 0;
+	}
+
+	// 삭제할 노드의 자식 노드가 없는 경우.
+	if (pNode->left == NULL && pNode->right == NULL)
+	{
+		if (ParentNode != NULL)
+		{
+			if (ParentNode->left == pNode)
+				ParentNode->left = NULL;
+			else
+				ParentNode->right = NULL;
+
+			free(pNode);
+			g_nsize--;
+		}
+		else
+		{
+			free(pNode);
+			g_proot = NULL;
+			g_nsize--;
+		}
+
+		return 1;
+	}
+	//// 삭제할 노드의 왼쪽 자식 노드가 없는 경우.
+	//else if (pNode->left == NULL)
+	//{
+
+	//}
+
 
 	return 1;
 }
@@ -167,9 +217,7 @@ int main(void)
 	InsertNode("6번");
 	InsertNode("8번");
 
-	printf("FindNode() : [%p], %s\n",
-		FindNode(g_proot, "7번"),
-		FindNode(g_proot, "7번")->szData);
+	DeleteNode(g_proot, "8번");
 
 	PrintTree(g_proot);
 	ReleaseTree(g_proot);
