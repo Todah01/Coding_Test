@@ -34,6 +34,8 @@ void PrintTree(NODE* pParent)
 	if (pParent == NULL)
 		return;
 
+	//printf("Current Node : [%p], %s\n", pParent, pParent->szData);
+
 	PrintTree(pParent->left);
 
 	printf("[%p] %p | %s [%p]\n", 
@@ -140,16 +142,24 @@ int DeleteNode(NODE* pParent, const char* pszData)
 {
 	NODE* ParentNode = (NODE*)malloc(sizeof(NODE));
 	memset(ParentNode, 0, sizeof(NODE));
+	NODE* pTmp = (NODE*)malloc(sizeof(NODE));
+	memset(pTmp, 0, sizeof(NODE));
+	NODE* pTmpNode = (NODE*)malloc(sizeof(NODE));
+	memset(pTmpNode, 0, sizeof(NODE));
 	NODE* pNode = pParent;
 
 	while (pNode != NULL)
 	{
-		ParentNode = pNode;
-
 		if (strcmp(pNode->szData, pszData) > 0)
+		{
+			ParentNode = pNode;
 			pNode = pNode->left;
+		}
 		else if (strcmp(pNode->szData, pszData) < 0)
+		{
+			ParentNode = pNode;
 			pNode = pNode->right;
+		}	
 		else
 			break;
 	}
@@ -166,30 +176,63 @@ int DeleteNode(NODE* pParent, const char* pszData)
 	{
 		if (ParentNode != NULL)
 		{
+			//printf("ParentNode : [%p] | pNode : [%p]\n", ParentNode, pNode);
+			
 			if (ParentNode->left == pNode)
 				ParentNode->left = NULL;
 			else
 				ParentNode->right = NULL;
-
-			free(pNode);
-			g_nsize--;
 		}
 		else
 		{
-			free(pNode);
 			g_proot = NULL;
-			g_nsize--;
 		}
-
-		return 1;
 	}
-	//// 삭제할 노드의 왼쪽 자식 노드가 없는 경우.
-	//else if (pNode->left == NULL)
-	//{
+	// 삭제할 노드의 한쪽 자식 노드가 없는 경우.
+	else if (pNode->left == NULL || pNode->right == NULL)
+	{
+		if (pNode->left == NULL)
+			pTmp = pNode->right;
+		else if(pNode->right == NULL)
+			pTmp = pNode->left;
 
-	//}
+		//printf("ParentNode : [%p] | pNode : [%p]\n", ParentNode, pNode);
 
+		if (ParentNode != NULL)
+		{
+			if (ParentNode->left == pNode)
+				ParentNode->left = pTmp;
+			else if (ParentNode->right == pNode)
+				ParentNode->right = pTmp;
+		}
+		else
+		{
+			g_proot = pTmp;
+		}
+	}
+	// 삭제할 노드의 자식 노드가 둘다 있는 경우.
+	else
+	{
+		pTmpNode = pNode;
+		pTmp = pNode->right;
 
+		while (pTmp->left != NULL)
+		{
+			pTmpNode = pTmp;
+			pTmp = pTmp->left;
+		}
+		
+		if (pTmpNode->right == pTmp)
+			pTmpNode->right = pTmp->right;
+		else if (pTmpNode->right != pTmp)
+			pTmpNode->left = pTmp->right;
+
+		strcpy_s(pNode->szData, sizeof(pNode->szData), pTmp->szData);
+		pNode = pTmp;
+	}
+
+	free(pNode);
+	g_nsize--;
 	return 1;
 }
 
@@ -217,7 +260,7 @@ int main(void)
 	InsertNode("6번");
 	InsertNode("8번");
 
-	DeleteNode(g_proot, "8번");
+	DeleteNode(g_proot, "7번");
 
 	PrintTree(g_proot);
 	ReleaseTree(g_proot);
