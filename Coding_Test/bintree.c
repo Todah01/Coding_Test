@@ -140,8 +140,7 @@ NODE* GetNodeHasMinValue(NODE* pParent)
 
 int DeleteNode(NODE* pParent, const char* pszData)
 {
-	NODE* ParentNode = (NODE*)malloc(sizeof(NODE));
-	memset(ParentNode, 0, sizeof(NODE));
+	NODE* ParentNode = NULL;
 	NODE* pTmp = (NODE*)malloc(sizeof(NODE));
 	memset(pTmp, 0, sizeof(NODE));
 	NODE* pTmpNode = (NODE*)malloc(sizeof(NODE));
@@ -161,7 +160,9 @@ int DeleteNode(NODE* pParent, const char* pszData)
 			pNode = pNode->right;
 		}	
 		else
+		{
 			break;
+		}	
 	}
 
 	// 삭제할 노드를 찾지 못한 경우.
@@ -176,7 +177,7 @@ int DeleteNode(NODE* pParent, const char* pszData)
 	{
 		if (ParentNode != NULL)
 		{
-			//printf("ParentNode : [%p] | pNode : [%p]\n", ParentNode, pNode);
+			// printf("ParentNode : [%p] | pNode : [%p]\n", ParentNode, pNode);
 			
 			if (ParentNode->left == pNode)
 				ParentNode->left = NULL;
@@ -227,10 +228,12 @@ int DeleteNode(NODE* pParent, const char* pszData)
 		else if (pTmpNode->right != pTmp)
 			pTmpNode->left = pTmp->right;
 
+		//printf("DeleteNode() : [%p], %s\n", pNode, pNode->szData);
+
 		strcpy_s(pNode->szData, sizeof(pNode->szData), pTmp->szData);
 		pNode = pTmp;
 	}
-
+	
 	free(pNode);
 	g_nsize--;
 	return 1;
@@ -260,7 +263,7 @@ int main(void)
 	InsertNode("6번");
 	InsertNode("8번");
 
-	DeleteNode(g_proot, "7번");
+	DeleteNode(g_proot, "5번");
 
 	PrintTree(g_proot);
 	ReleaseTree(g_proot);
