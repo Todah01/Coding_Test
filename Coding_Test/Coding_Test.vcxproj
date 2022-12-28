@@ -150,6 +150,7 @@
     <ClCompile Include="lottos.cpp" />
     <ClCompile Include="mylist.c" />
     <ClCompile Include="new_id_suggest.cpp" />
+    <ClCompile Include="part_of_sum.cpp" />
     <ClCompile Include="ponketmon.cpp" />
     <ClCompile Include="practice_1.cpp" />
     <ClCompile Include="practice_10.cpp" />
