@@ -225,6 +225,9 @@
     <ClCompile Include="cantor_set.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="near_word.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
