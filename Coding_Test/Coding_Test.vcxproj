@@ -146,6 +146,7 @@
     <ClCompile Include="data_structure.c" />
     <ClCompile Include="double_linked_list.c" />
     <ClCompile Include="fade.cpp" />
+    <ClCompile Include="hall_of_fame.cpp" />
     <ClCompile Include="hash_table.cpp" />
     <ClCompile Include="k_number.cpp" />
     <ClCompile Include="lottos.cpp" />
