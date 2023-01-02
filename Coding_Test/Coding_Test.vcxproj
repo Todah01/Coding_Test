@@ -181,6 +181,7 @@
     <ClCompile Include="smart_pointer.cpp" />
     <ClCompile Include="sum_of_number.cpp" />
     <ClCompile Include="vector.cpp" />
+    <ClCompile Include="weapon_of_knight.cpp" />
     <ClCompile Include="webzen.cpp" />
     <ClCompile Include="practice_4.cpp" />
     <ClCompile Include="practice_5.cpp" />
