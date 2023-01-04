@@ -41,5 +41,29 @@ int solution(int number, int limit, int power) {
 #endif
 
 #if 0
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <iostream>
 
+using namespace std;
+
+int solution(vector<vector<int>> data, int col, int row_begin, int row_end) {
+    int answer = 0;
+    col -= 1;
+    sort(data.begin(), data.end(), [col](vector<int> a, vector<int> b) {
+        return (a[col] != b[col]) ? (a[col] < b[col]) : (a[0] > b[0]);
+        });
+
+    for (int t_idx = row_begin; t_idx <= row_end; t_idx++)
+    {
+        int s_i = 0;
+        for (int p_value : data[t_idx - 1])
+        {
+            s_i += p_value % t_idx;
+        }
+        answer ^= s_i;
+    }
+    return answer;
+}
 #endif
