@@ -154,6 +154,7 @@
     <ClCompile Include="mylist.c" />
     <ClCompile Include="near_word.cpp" />
     <ClCompile Include="new_id_suggest.cpp" />
+    <ClCompile Include="package_order.cpp" />
     <ClCompile Include="part_of_sum.cpp" />
     <ClCompile Include="ponketmon.cpp" />
     <ClCompile Include="practice_1.cpp" />
@@ -179,6 +180,7 @@
     <ClCompile Include="practice_29.cpp" />
     <ClCompile Include="practice_3.cpp" />
     <ClCompile Include="practice_30.cpp" />
+    <ClCompile Include="roll_cake_cutting.cpp" />
     <ClCompile Include="smart_pointer.cpp" />
     <ClCompile Include="sum_of_number.cpp" />
     <ClCompile Include="tangerine.cpp" />

@@ -1,3 +1,4 @@
+#if 0
 #include <string>
 #include <vector>
 #include <iostream>
@@ -43,3 +44,4 @@ int solution(int n, long long l, long long r) {
 
     return answer;
 }
+#endif

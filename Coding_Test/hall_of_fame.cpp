@@ -1,3 +1,4 @@
+#if 0
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -18,3 +19,4 @@ vector<int> solution(int k, vector<int> score) {
 
     return answer;
 }
+#endif

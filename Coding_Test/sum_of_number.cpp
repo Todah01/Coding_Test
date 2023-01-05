@@ -1,3 +1,4 @@
+#if 0
 #include <string>
 #include <vector>
 
@@ -9,3 +10,4 @@ long long solution(int a, int b) {
         answer += i;
     return answer;
 }
+#endif

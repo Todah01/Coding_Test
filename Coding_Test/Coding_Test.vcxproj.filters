@@ -243,6 +243,12 @@
     <ClCompile Include="tangerine.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="roll_cake_cutting.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="package_order.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
