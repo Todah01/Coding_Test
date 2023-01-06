@@ -145,6 +145,7 @@
     <ClCompile Include="collaz.cpp" />
     <ClCompile Include="crain_select.cpp" />
     <ClCompile Include="data_structure.c" />
+    <ClCompile Include="discount.cpp" />
     <ClCompile Include="double_linked_list.c" />
     <ClCompile Include="fade.cpp" />
     <ClCompile Include="hall_of_fame.cpp" />
