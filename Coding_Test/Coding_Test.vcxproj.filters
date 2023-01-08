@@ -255,6 +255,9 @@
     <ClCompile Include="play_alone.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="food_fight.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">

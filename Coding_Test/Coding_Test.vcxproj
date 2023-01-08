@@ -148,6 +148,7 @@
     <ClCompile Include="discount.cpp" />
     <ClCompile Include="double_linked_list.c" />
     <ClCompile Include="fade.cpp" />
+    <ClCompile Include="food_fight.cpp" />
     <ClCompile Include="hall_of_fame.cpp" />
     <ClCompile Include="hash_table.cpp" />
     <ClCompile Include="k_number.cpp" />
