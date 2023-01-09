@@ -258,6 +258,9 @@
     <ClCompile Include="food_fight.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="emoticons.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">

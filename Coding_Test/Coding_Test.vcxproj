@@ -147,6 +147,7 @@
     <ClCompile Include="data_structure.c" />
     <ClCompile Include="discount.cpp" />
     <ClCompile Include="double_linked_list.c" />
+    <ClCompile Include="emoticons.cpp" />
     <ClCompile Include="fade.cpp" />
     <ClCompile Include="food_fight.cpp" />
     <ClCompile Include="hall_of_fame.cpp" />
