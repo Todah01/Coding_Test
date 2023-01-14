@@ -151,6 +151,7 @@
     <ClCompile Include="easy_case.cpp" />
     <ClCompile Include="emoticons.cpp" />
     <ClCompile Include="fade.cpp" />
+    <ClCompile Include="fibo_optimize.cpp" />
     <ClCompile Include="finn_number.cpp" />
     <ClCompile Include="food_fight.cpp" />
     <ClCompile Include="hall_of_fame.cpp" />
