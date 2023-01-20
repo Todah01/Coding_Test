@@ -162,6 +162,7 @@
     <ClCompile Include="k_number.cpp" />
     <ClCompile Include="lottos.cpp" />
     <ClCompile Include="match.cpp" />
+    <ClCompile Include="matrix.cpp" />
     <ClCompile Include="mylist.c" />
     <ClCompile Include="near_word.cpp" />
     <ClCompile Include="new_id_suggest.cpp" />

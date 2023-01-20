@@ -37,12 +37,13 @@ int solution_1(int n)
 
 int solution_2(int n)
 {
-    return __builtin_popcount(n);
+    // return __builtin_popcount(n);
+    return 0;
 }
 
 int main()
 {
-    cout << solution_2(6);
+    cout << solution_1(6);
 }
 #endif
 #pragma endregion
