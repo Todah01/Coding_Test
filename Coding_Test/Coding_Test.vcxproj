@@ -146,6 +146,7 @@
     <ClCompile Include="char_cutting.cpp" />
     <ClCompile Include="collaz.cpp" />
     <ClCompile Include="crain_select.cpp" />
+    <ClCompile Include="cutting_arr.cpp" />
     <ClCompile Include="data_structure.c" />
     <ClCompile Include="discount.cpp" />
     <ClCompile Include="double_linked_list.c" />
