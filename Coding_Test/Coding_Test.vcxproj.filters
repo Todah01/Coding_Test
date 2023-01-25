@@ -297,6 +297,9 @@
     <ClCompile Include="cola.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="babbling.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
