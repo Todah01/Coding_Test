@@ -145,6 +145,7 @@
     <ClCompile Include="bitwise.cpp" />
     <ClCompile Include="cantor_set.cpp" />
     <ClCompile Include="char_cutting.cpp" />
+    <ClCompile Include="circle_permitation.cpp" />
     <ClCompile Include="cola.cpp" />
     <ClCompile Include="collaz.cpp" />
     <ClCompile Include="crain_select.cpp" />
