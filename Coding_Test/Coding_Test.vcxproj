@@ -235,6 +235,7 @@
     <ClCompile Include="Test_6.cpp" />
     <ClCompile Include="Test_8.cpp" />
     <ClCompile Include="Test_9.cpp" />
+    <ClCompile Include="zip.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="double_linked_list.h" />
