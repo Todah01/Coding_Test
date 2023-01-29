@@ -172,6 +172,7 @@
     <ClCompile Include="near_word.cpp" />
     <ClCompile Include="new_id_suggest.cpp" />
     <ClCompile Include="package_order.cpp" />
+    <ClCompile Include="pair_number.cpp" />
     <ClCompile Include="part_of_sum.cpp" />
     <ClCompile Include="play_alone.cpp" />
     <ClCompile Include="ponketmon.cpp" />
