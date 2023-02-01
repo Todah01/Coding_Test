@@ -315,6 +315,9 @@
     <ClCompile Include="land_escape.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="fruit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">

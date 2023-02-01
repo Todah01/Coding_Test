@@ -22,6 +22,23 @@ int solution(vector<vector<int> > land)
 
 #pragma region Using cutting arr
 #if 0
+#include <iostream>
+#include <vector>
+#include <algorithm>
 
+using namespace std;
+
+int solution(vector<vector<int>> land)
+{
+    for (int i = 1; i < land.size(); i++)
+        for (int j = 0; j < land[i - 1].size(); j++)
+        {
+            vector<int> temp = land[i - 1];
+            temp.erase(temp.begin() + j);
+            land[i][j] += *max_element(temp.begin(), temp.end());
+        }
+
+    return *max_element(land[land.size() - 1].begin(), land[land.size() - 1].end());
+}
 #endif
 #pragma endregion
