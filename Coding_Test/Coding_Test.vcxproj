@@ -161,6 +161,7 @@
     <ClCompile Include="finn_number.cpp" />
     <ClCompile Include="food_fight.cpp" />
     <ClCompile Include="fruit.cpp" />
+    <ClCompile Include="gcd_lcm.cpp" />
     <ClCompile Include="greedy.cpp" />
     <ClCompile Include="hall_of_fame.cpp" />
     <ClCompile Include="hamburger.cpp" />
@@ -201,6 +202,7 @@
     <ClCompile Include="practice_29.cpp" />
     <ClCompile Include="practice_3.cpp" />
     <ClCompile Include="practice_30.cpp" />
+    <ClCompile Include="prime.cpp" />
     <ClCompile Include="quadratic_equation.cpp" />
     <ClCompile Include="roll_cake_cutting.cpp" />
     <ClCompile Include="smart_pointer.cpp" />
