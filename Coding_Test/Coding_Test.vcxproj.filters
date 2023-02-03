@@ -324,6 +324,12 @@
     <ClCompile Include="gcd_lcm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="phone_number.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="type.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">

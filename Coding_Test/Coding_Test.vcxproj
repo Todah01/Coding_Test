@@ -177,6 +177,7 @@
     <ClCompile Include="package_order.cpp" />
     <ClCompile Include="pair_number.cpp" />
     <ClCompile Include="part_of_sum.cpp" />
+    <ClCompile Include="phone_number.cpp" />
     <ClCompile Include="play_alone.cpp" />
     <ClCompile Include="ponketmon.cpp" />
     <ClCompile Include="practice_1.cpp" />
@@ -208,6 +209,7 @@
     <ClCompile Include="smart_pointer.cpp" />
     <ClCompile Include="sum_of_number.cpp" />
     <ClCompile Include="tangerine.cpp" />
+    <ClCompile Include="type.cpp" />
     <ClCompile Include="vector.cpp" />
     <ClCompile Include="weapon_of_knight.cpp" />
     <ClCompile Include="webzen.cpp" />
