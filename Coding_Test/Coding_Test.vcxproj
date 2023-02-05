@@ -156,6 +156,7 @@
     <ClCompile Include="easy_case.cpp" />
     <ClCompile Include="emoticons.cpp" />
     <ClCompile Include="english_word.cpp" />
+    <ClCompile Include="even_odd.cpp" />
     <ClCompile Include="fade.cpp" />
     <ClCompile Include="fibo_optimize.cpp" />
     <ClCompile Include="finn_number.cpp" />

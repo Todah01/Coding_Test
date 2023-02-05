@@ -333,6 +333,9 @@
     <ClCompile Include="password.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="even_odd.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
