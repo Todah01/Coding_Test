@@ -179,6 +179,7 @@
     <ClCompile Include="pair_number.cpp" />
     <ClCompile Include="part_of_sum.cpp" />
     <ClCompile Include="password.cpp" />
+    <ClCompile Include="personal_info.cpp" />
     <ClCompile Include="phone_number.cpp" />
     <ClCompile Include="play_alone.cpp" />
     <ClCompile Include="ponketmon.cpp" />
