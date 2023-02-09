@@ -210,6 +210,7 @@
     <ClCompile Include="practice_30.cpp" />
     <ClCompile Include="prime.cpp" />
     <ClCompile Include="quadratic_equation.cpp" />
+    <ClCompile Include="road_to_exit.cpp" />
     <ClCompile Include="roll_cake_cutting.cpp" />
     <ClCompile Include="smart_pointer.cpp" />
     <ClCompile Include="sum_of_number.cpp" />
