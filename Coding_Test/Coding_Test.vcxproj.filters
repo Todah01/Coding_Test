@@ -348,6 +348,9 @@
     <ClCompile Include="road_to_exit.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="sort_file_name.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
