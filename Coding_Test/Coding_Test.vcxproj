@@ -185,6 +185,7 @@
     <ClCompile Include="phone_number.cpp" />
     <ClCompile Include="play_alone.cpp" />
     <ClCompile Include="ponketmon.cpp" />
+    <ClCompile Include="practice31.cpp" />
     <ClCompile Include="practice_1.cpp" />
     <ClCompile Include="practice_10.cpp" />
     <ClCompile Include="practice_11.cpp" />
