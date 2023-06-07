@@ -1,4 +1,4 @@
-#if 1
+#if 0
 #include <string>
 #include <vector>
 #include <climits>
@@ -25,4 +25,9 @@ int solution(int x, int y, int n) {
     else return dp[y];
 }
 
+int main() {
+    cout << solution(10, 40, 5) << endl;
+    cout << solution(10, 30, 5) << endl;
+    cout << solution(2, 3, 4) << endl;
+}
 #endif
