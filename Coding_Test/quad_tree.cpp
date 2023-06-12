@@ -1,5 +1,36 @@
-#if 1
+#if 0
+#include <string>
+#include <vector>
 
+using namespace std;
+
+vector<vector<int>> board;
+
+void dfs(int a, int b, vector<int>& answer, int size) {
+    int x = a;
+    int y = b;
+    int target = board[x][y];
+
+    for (int i = 0; i < size; i++)
+        for (int j = 0; j < size; j++)
+            if (board[x + i][y + j] != target) {
+                dfs(x, y, answer, size / 2);
+                dfs(x, y + size / 2, answer, size / 2);
+                dfs(x + size / 2, y, answer, size / 2);
+                dfs(x + size / 2, y + size / 2, answer, size / 2);
+                return;
+            }
+
+    answer[target]++;
+    return;
+}
+
+vector<int> solution(vector<vector<int>> arr) {
+    vector<int> answer(2, 0);
+    board = arr;
+    dfs(0, 0, answer, arr.size());
+    return answer;
+}
 #endif
 
 #if 0
