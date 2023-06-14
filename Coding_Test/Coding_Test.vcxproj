@@ -220,6 +220,7 @@
     <ClCompile Include="sort_file_name.cpp" />
     <ClCompile Include="sum_of_number.cpp" />
     <ClCompile Include="tangerine.cpp" />
+    <ClCompile Include="travel_island.cpp" />
     <ClCompile Include="two_pointer.cpp" />
     <ClCompile Include="type.cpp" />
     <ClCompile Include="vector.cpp" />
