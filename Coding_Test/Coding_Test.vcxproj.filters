@@ -369,6 +369,9 @@
     <ClCompile Include="travel_island.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="recurrsion_str_calculate.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
