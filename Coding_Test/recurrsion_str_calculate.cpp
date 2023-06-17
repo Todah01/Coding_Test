@@ -1,28 +1,37 @@
 #if 0
-import re
-from itertools import permutations
+#include <iostream>
+#include <vector>
+#include <algorithm>
 
-def solution(expression) :
-    answer = 0
-    operators = ['+', '-', '*']
-    for operator in operators :
-if operator not in expression :
-operators.remove(operator)
+using namespace std;
 
-split_result = re.findall(r'\d+|[-+*]', expression)
 
-operator_perms = permutations(operators)
-for operator_perm in operator_perms :
-cpy_result = split_result
-for oper in operator_perm :
-temp_result = []
-for idx in range(len(cpy_result)) :
-    if cpy_result[idx] == oper :
-        temp_result.append(str(eval(''.join(cpy_result[idx - 1:idx + 2]))))
-    else :
-        temp_result.append(cpy_result[idx])
-        cpy_result = temp_result
-        print(temp_result)
+long long solution(string expression) {
+    vector<long long> result;
+    vector<char> symbols = { '*', '+', '-' };
+    vector<vector<char>> symbols_perms;
+    vector<char> split_expression;
 
-        return answer
+    for (auto iter : expression) split_expression.push_back(iter);
+
+    do {
+        vector<char> temp_perm;
+        for (const auto& symbol : symbols) {
+            temp_perm.push_back(symbol);
+        }
+        symbols_perms.push_back(temp_perm);
+    } while (std::next_permutation(symbols.begin(), symbols.end()));
+
+    for (auto symbols_perm : symbols_perms) {
+        for (auto oper : symbols_perm) {
+            auto it = find(split_expression.begin(), split_expression.end(), oper);
+            if (it != split_expression.end()) {
+                int idx = distance(split_expression.begin(), it);
+                cout << split_expression[idx];
+            }
+        }
+    }
+
+    return 0;
+}
 #endif
