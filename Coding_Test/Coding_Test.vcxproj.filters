@@ -381,6 +381,9 @@
     <ClCompile Include="make_line.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="delivery.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">

@@ -153,6 +153,7 @@
     <ClCompile Include="cutting_arr.cpp" />
     <ClCompile Include="cutting_wires.cpp" />
     <ClCompile Include="data_structure.c" />
+    <ClCompile Include="delivery.cpp" />
     <ClCompile Include="discount.cpp" />
     <ClCompile Include="double_linked_list.c" />
     <ClCompile Include="easy_case.cpp" />
