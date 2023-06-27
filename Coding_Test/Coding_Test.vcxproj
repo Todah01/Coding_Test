@@ -155,6 +155,7 @@
     <ClCompile Include="data_structure.c" />
     <ClCompile Include="delivery.cpp" />
     <ClCompile Include="discount.cpp" />
+    <ClCompile Include="dp.cpp" />
     <ClCompile Include="dot.cpp" />
     <ClCompile Include="double_linked_list.c" />
     <ClCompile Include="easy_case.cpp" />
