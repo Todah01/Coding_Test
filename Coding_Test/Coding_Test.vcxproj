@@ -172,6 +172,7 @@
     <ClCompile Include="hall_of_fame.cpp" />
     <ClCompile Include="hamburger.cpp" />
     <ClCompile Include="hash_table.cpp" />
+    <ClCompile Include="hotel_reserv.cpp" />
     <ClCompile Include="k_number.cpp" />
     <ClCompile Include="land_escape.cpp" />
     <ClCompile Include="lottos.cpp" />
