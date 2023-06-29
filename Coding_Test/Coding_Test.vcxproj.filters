@@ -393,6 +393,9 @@
     <ClCompile Include="hotel_reserv.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="distance_check.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
