@@ -177,6 +177,7 @@
     <ClCompile Include="k_number.cpp" />
     <ClCompile Include="land_escape.cpp" />
     <ClCompile Include="lottos.cpp" />
+    <ClCompile Include="magic_elebator.cpp" />
     <ClCompile Include="make_line.cpp" />
     <ClCompile Include="match.cpp" />
     <ClCompile Include="matrix.cpp" />
