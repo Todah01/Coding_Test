@@ -156,6 +156,7 @@
     <ClCompile Include="delivery.cpp" />
     <ClCompile Include="discount.cpp" />
     <ClCompile Include="distance_check.cpp" />
+    <ClCompile Include="div_arr.cpp" />
     <ClCompile Include="dp.cpp" />
     <ClCompile Include="dot.cpp" />
     <ClCompile Include="double_linked_list.c" />
