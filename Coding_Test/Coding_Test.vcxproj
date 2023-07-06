@@ -173,6 +173,7 @@
     <ClCompile Include="greedy.cpp" />
     <ClCompile Include="hall_of_fame.cpp" />
     <ClCompile Include="hamburger.cpp" />
+    <ClCompile Include="hanoi.cpp" />
     <ClCompile Include="hash_table.cpp" />
     <ClCompile Include="hotel_reserv.cpp" />
     <ClCompile Include="k_number.cpp" />
