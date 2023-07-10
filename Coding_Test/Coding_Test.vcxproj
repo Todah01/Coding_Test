@@ -143,6 +143,7 @@
     <ClCompile Include="bintree.c" />
     <ClCompile Include="bitset_check.cpp" />
     <ClCompile Include="bitwise.cpp" />
+    <ClCompile Include="candi_key.cpp" />
     <ClCompile Include="cantor_set.cpp" />
     <ClCompile Include="char_cutting.cpp" />
     <ClCompile Include="circle_permitation.cpp" />
