@@ -154,6 +154,7 @@
     <ClCompile Include="cutting_arr.cpp" />
     <ClCompile Include="cutting_wires.cpp" />
     <ClCompile Include="data_structure.c" />
+    <ClCompile Include="defense_game.cpp" />
     <ClCompile Include="delivery.cpp" />
     <ClCompile Include="discount.cpp" />
     <ClCompile Include="distance_check.cpp" />
