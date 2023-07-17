@@ -228,6 +228,7 @@
     <ClCompile Include="prime.cpp" />
     <ClCompile Include="quadratic_equation.cpp" />
     <ClCompile Include="quad_tree.cpp" />
+    <ClCompile Include="recochat_robot.cpp" />
     <ClCompile Include="recurrsion_str_calculate.cpp" />
     <ClCompile Include="road_to_exit.cpp" />
     <ClCompile Include="roll_cake_cutting.cpp" />

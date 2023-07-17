@@ -417,6 +417,9 @@
     <ClCompile Include="defense_game.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="recochat_robot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
