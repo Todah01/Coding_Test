@@ -148,6 +148,7 @@
     <ClCompile Include="char_cutting.cpp" />
     <ClCompile Include="circle_permitation.cpp" />
     <ClCompile Include="cola.cpp" />
+    <ClCompile Include="collatz_area.cpp" />
     <ClCompile Include="collaz.cpp" />
     <ClCompile Include="convert_number.cpp" />
     <ClCompile Include="crain_select.cpp" />
