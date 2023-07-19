@@ -179,6 +179,7 @@
     <ClCompile Include="hanoi.cpp" />
     <ClCompile Include="hash_table.cpp" />
     <ClCompile Include="hotel_reserv.cpp" />
+    <ClCompile Include="keymap.cpp" />
     <ClCompile Include="k_number.cpp" />
     <ClCompile Include="land_escape.cpp" />
     <ClCompile Include="lottos.cpp" />
