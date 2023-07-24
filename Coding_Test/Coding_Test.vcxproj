@@ -149,6 +149,7 @@
     <ClCompile Include="cards_check.cpp" />
     <ClCompile Include="char_cutting.cpp" />
     <ClCompile Include="circle_permitation.cpp" />
+    <ClCompile Include="clear_desktop.cpp" />
     <ClCompile Include="cola.cpp" />
     <ClCompile Include="collatz_area.cpp" />
     <ClCompile Include="collaz.cpp" />
