@@ -238,6 +238,7 @@
     <ClCompile Include="road_to_exit.cpp" />
     <ClCompile Include="roll_cake_cutting.cpp" />
     <ClCompile Include="rotate_matrix.cpp" />
+    <ClCompile Include="running.cpp" />
     <ClCompile Include="smart_pointer.cpp" />
     <ClCompile Include="sort_file_name.cpp" />
     <ClCompile Include="sum_of_number.cpp" />
