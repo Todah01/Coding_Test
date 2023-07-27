@@ -198,6 +198,7 @@
     <ClCompile Include="number_change.cpp" />
     <ClCompile Include="open_chat.cpp" />
     <ClCompile Include="package_order.cpp" />
+    <ClCompile Include="painting_area.cpp" />
     <ClCompile Include="pair_number.cpp" />
     <ClCompile Include="pair_of_playground.cpp" />
     <ClCompile Include="part_of_sum.cpp" />

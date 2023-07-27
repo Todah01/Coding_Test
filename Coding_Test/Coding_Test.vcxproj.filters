@@ -438,6 +438,9 @@
     <ClCompile Include="running.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="painting_area.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
