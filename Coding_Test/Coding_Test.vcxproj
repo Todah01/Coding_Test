@@ -197,6 +197,7 @@
     <ClCompile Include="mylist.c" />
     <ClCompile Include="near_word.cpp" />
     <ClCompile Include="new_id_suggest.cpp" />
+    <ClCompile Include="nqueen_problem.cpp" />
     <ClCompile Include="number_change.cpp" />
     <ClCompile Include="open_chat.cpp" />
     <ClCompile Include="package_order.cpp" />
