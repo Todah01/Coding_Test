@@ -183,6 +183,7 @@
     <ClCompile Include="hamburger.cpp" />
     <ClCompile Include="hanoi.cpp" />
     <ClCompile Include="hash_table.cpp" />
+    <ClCompile Include="homework.cpp" />
     <ClCompile Include="hotel_reserv.cpp" />
     <ClCompile Include="keymap.cpp" />
     <ClCompile Include="k_number.cpp" />
