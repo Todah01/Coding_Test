@@ -195,6 +195,7 @@
     <ClCompile Include="match.cpp" />
     <ClCompile Include="matrix.cpp" />
     <ClCompile Include="maze_exit.cpp" />
+    <ClCompile Include="mining.cpp" />
     <ClCompile Include="music_song.cpp" />
     <ClCompile Include="mylist.c" />
     <ClCompile Include="near_word.cpp" />
