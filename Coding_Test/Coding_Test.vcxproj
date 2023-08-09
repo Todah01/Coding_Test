@@ -166,6 +166,7 @@
     <ClCompile Include="dp.cpp" />
     <ClCompile Include="dot.cpp" />
     <ClCompile Include="double_linked_list.c" />
+    <ClCompile Include="dugeon.cpp" />
     <ClCompile Include="easy_case.cpp" />
     <ClCompile Include="emoticons.cpp" />
     <ClCompile Include="english_word.cpp" />
