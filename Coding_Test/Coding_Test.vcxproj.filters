@@ -468,6 +468,9 @@
     <ClCompile Include="tictacto.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="make_boundary.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
