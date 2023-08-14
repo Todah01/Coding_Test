@@ -142,6 +142,7 @@
     <ClCompile Include="artist.cpp" />
     <ClCompile Include="babbling.cpp" />
     <ClCompile Include="bintree.c" />
+    <ClCompile Include="bitset.cpp" />
     <ClCompile Include="bitset_check.cpp" />
     <ClCompile Include="bitwise.cpp" />
     <ClCompile Include="candi_key.cpp" />
