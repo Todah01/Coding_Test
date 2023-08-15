@@ -161,6 +161,7 @@
     <ClCompile Include="data_structure.c" />
     <ClCompile Include="defense_game.cpp" />
     <ClCompile Include="delivery.cpp" />
+    <ClCompile Include="dfs_to_sort.cpp" />
     <ClCompile Include="discount.cpp" />
     <ClCompile Include="distance_check.cpp" />
     <ClCompile Include="div_arr.cpp" />
