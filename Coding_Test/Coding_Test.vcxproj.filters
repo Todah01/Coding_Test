@@ -477,6 +477,9 @@
     <ClCompile Include="dfs_to_sort.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="make_block.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
