@@ -483,6 +483,9 @@
     <ClCompile Include="puzzle.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="trafic.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
