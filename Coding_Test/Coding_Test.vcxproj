@@ -260,6 +260,7 @@
     <ClCompile Include="tictacto.cpp" />
     <ClCompile Include="trafic.cpp" />
     <ClCompile Include="travel_island.cpp" />
+    <ClCompile Include="triangle.cpp" />
     <ClCompile Include="two_pointer.cpp" />
     <ClCompile Include="type.cpp" />
     <ClCompile Include="vector.cpp" />
