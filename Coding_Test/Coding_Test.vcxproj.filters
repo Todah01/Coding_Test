@@ -489,6 +489,9 @@
     <ClCompile Include="triangle.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="double_heapq.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">
