@@ -299,6 +299,7 @@
     <ClCompile Include="Test_6.cpp" />
     <ClCompile Include="Test_8.cpp" />
     <ClCompile Include="Test_9.cpp" />
+    <ClCompile Include="working_point.cpp" />
     <ClCompile Include="zip.cpp" />
   </ItemGroup>
   <ItemGroup>
