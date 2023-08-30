@@ -501,6 +501,9 @@
     <ClCompile Include="working_point.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="check_words.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector.h">

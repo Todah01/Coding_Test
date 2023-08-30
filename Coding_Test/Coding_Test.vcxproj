@@ -150,6 +150,7 @@
     <ClCompile Include="cantor_set.cpp" />
     <ClCompile Include="cards_check.cpp" />
     <ClCompile Include="char_cutting.cpp" />
+    <ClCompile Include="check_words.cpp" />
     <ClCompile Include="circle_permitation.cpp" />
     <ClCompile Include="clear_desktop.cpp" />
     <ClCompile Include="cola.cpp" />
