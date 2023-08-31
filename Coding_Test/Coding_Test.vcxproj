@@ -257,6 +257,7 @@
     <ClCompile Include="rotate_matrix.cpp" />
     <ClCompile Include="running.cpp" />
     <ClCompile Include="set_network.cpp" />
+    <ClCompile Include="short_direction.cpp" />
     <ClCompile Include="smart_pointer.cpp" />
     <ClCompile Include="sort_file_name.cpp" />
     <ClCompile Include="sum_of_number.cpp" />
