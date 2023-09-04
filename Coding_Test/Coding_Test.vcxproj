@@ -211,6 +211,7 @@
     <ClCompile Include="nqueen_problem.cpp" />
     <ClCompile Include="numberBlock.cpp" />
     <ClCompile Include="number_change.cpp" />
+    <ClCompile Include="number_game.cpp" />
     <ClCompile Include="open_chat.cpp" />
     <ClCompile Include="package_order.cpp" />
     <ClCompile Include="painting_area.cpp" />
