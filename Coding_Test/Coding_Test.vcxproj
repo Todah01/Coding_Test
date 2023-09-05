@@ -146,6 +146,7 @@
     <ClCompile Include="bitset.cpp" />
     <ClCompile Include="bitset_check.cpp" />
     <ClCompile Include="bitwise.cpp" />
+    <ClCompile Include="camera_section.cpp" />
     <ClCompile Include="candi_key.cpp" />
     <ClCompile Include="cantor_set.cpp" />
     <ClCompile Include="cards_check.cpp" />
